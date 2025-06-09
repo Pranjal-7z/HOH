@@ -1,68 +1,214 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: gulugulu;
+  src: url(../src/assets/fonts/FKScreamerLegacyTrial-Upright-BF6571330a902da.otf);
 }
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+@font-face {
+  font-family: jalebi;
+  src: url(../src/assets/fonts/DMSans_18pt-Regular.ttf);
 }
-a:hover {
-  color: #535bf2;
+@font-face {
+  font-family: anton;
+  src: url(../src/assets/fonts/Anton-Regular.ttf);
 }
-
-body {
+@font-face {
+  font-family: pacifico;
+  src: url(../src/assets/fonts/Pacifico-Regular.ttf);
+}
+@font-face {
+  font-family: barri;
+  src: url(../src/assets/fonts/Barriecito-Regular.ttf);
+}
+@font-face {
+  font-family: cave;
+  src: url(../src/assets/fonts/CaveatBrush-Regular.ttf);
+}
+@font-face {
+  font-family: teko;
+  src: url(../src/assets/fonts/Teko-Regular.ttf);
+}
+*{
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  color: white;
+
+}
+.homepage{
+   
+  
+ 
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  color: white;
+ 
+  display: grid;
+  grid-template-rows:  100vh;
+  grid-template-columns: 100%;
+  text-align: center;
+ 
+
+}
+.navbar{
+  margin-top: 3vh;
+  padding: 0 3%;
+  position: fixed;
+  top: 0;
+  left: 0;
+   width: 100%;
+  height: 15vh;
+ z-index: 1000;
+  min-height: 60px;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 100%;
+}
+.logo{
+  width: 100%;
+  height: 100%;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+ 
+   font-family: "teko";
+   font-size: 1.5rem;
+   line-height: 100%;
+}
+.logo img{
+  width: auto;
+  height: 60%;
+  min-height: 55px;
+ object-fit: contain;
+}
+.nav-space{
+  width: 100%;  
+  height: 100%;
+ 
+}
+.nav-menu{
+  font-family: "gulugulu";
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;  
+  height: 100%;
+  white-space: nowrap;
+}
+.nav-menu i{
+  font-weight: 900;
+  display: inline-block;
+  transform: rotate(45deg);
+  font-style: bold;
+}
+.home-text{
+ 
+
+  text-align: center;
+ display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  font-family: "gulugulu";
+  font-size: 10.5VW;
+  font-weight: 800;
+  line-height: 110%;
+  
+}
+.home-text video{
+ height: 10vw;
+display: block;
+  margin: 0 auto;
+  transform-origin: center center;
+ 
+  
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+@media screen and (max-width: 900px) {
+  .homepage{
+  padding: 3%;
+}
+  .navbar{
+   grid-template-columns: 70%  30%;
+   height: 10vh;
+   
+}
+.logo{
+  justify-content: left;
+   font-size: 1.2rem;
+   line-height: 100%;
+}
+.nav-space{
+  display: none;
+}
+.nav-menu{
+  
+  font-size: 3rem;
+  
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
+.home-text{
+ 
+
+ 
+  font-size: 15VW;
+  font-weight: 800;
+  line-height: 110%;
+  position: relative;
+  
 }
-button:hover {
-  border-color: #646cff;
+.home-text video{
+ height: 11vw;
+ transform-origin: center center;
+ 
+ 
+
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.video-show{
+  width: 100%;
+  height: 25vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+
+}
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+
+.video-show{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+
+ 
+}
+.center-txt{
+  display: flex;
+  gap: 10px;
+  flex-wrap: nowrap;
+
+  
+}
+.showcase{
+  border-radius: 1vmax;
+  transform-origin: center center;
+  
+}
+.specialities{
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+ 
+ 
 }
