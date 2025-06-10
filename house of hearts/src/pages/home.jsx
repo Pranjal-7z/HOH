@@ -10,6 +10,7 @@ import CustomEase from "gsap/CustomEase";
 gsap.registerPlugin(ScrollTrigger);
 const home = () => {
   const videoscrollref = useRef(null);
+  const videostopref=useRef(null);
   useGSAP(()=>{
     const tl = gsap.timeline({
       scrollTrigger: {
@@ -20,22 +21,23 @@ const home = () => {
         pin: ".showcase",
       },
     });
+
     tl.to(".navbar", {
       marginTop: "-1vh",
       duration: 0.3,
-    })
+    },["same"])
     tl.to(".logo h3",{
       x: -200,
      
       duration: 0.3,
-    })
+    },["same"])
 
     tl.to(".showcase", {
      scale: 6.5,
       
       
       borderRadius: "1px",
-    })
+    },["same"])
   })
   const playVideo = () => {
      videoscrollref.current.scrollIntoView({ behavior: 'smooth' });
@@ -89,7 +91,7 @@ const home = () => {
         </div>
       </div>
       <div ref={videoscrollref} className="video-show"></div>
-      <div className="specialities"></div>
+      <div ref={videostopref} className="specialities"></div>
     </div>
   );
 };
