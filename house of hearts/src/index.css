@@ -37,6 +37,7 @@ html,body{
   height: 100vh;
   width: 100%;
   color: white;
+background-color: black;
 
 }
 .homepage{
@@ -56,7 +57,7 @@ html,body{
 
 }
 .navbar{
-  margin-top: 3vh;
+  margin-top: 3rem;
   padding: 0 3%;
   position: fixed;
   top: 0;
@@ -147,10 +148,103 @@ html,body{
   object-fit: cover;
  
 }
+.video-show{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+
+ 
+}
+.center-txt{
+  display: flex;
+  gap: 10px;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+
+  
+}
+
+.specialities{
+  width: 100%;
+  height: 100vh;
+  
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+  font-family: "gulugulu";
+  font-size: 9VW;
+  font-weight: 800;
+  line-height: 110%;
+  flex-wrap: nowrap;
+ 
+}
+.specs-firstl{
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  
+  align-items: center;
+  justify-content: center;
+  gap: 1%;
+}
+.img-div1{
+ height: 7vw;
+ width: 12vw;
+ 
+ border-radius: 1vmax;
+background-image: url("https://buildthebandwagon.com/_next/image?url=https%3A%2F%2Fbuildthebandwagon.s3.eu-west-1.amazonaws.com%2Fbuildthebandwagon%2FDSC-246%20(1).jpg&w=1080&q=75");
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+.specs-secondl{
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  
+  align-items: center;
+  justify-content: center;
+  gap: 1%;
+}
+.img-div2{
+ height: 7vw;
+ width: 12vw;
+ 
+ border-radius: 1vmax;
+background-image: url("https://buildthebandwagon.com/_next/image?url=https%3A%2F%2Fbuildthebandwagon.s3.eu-west-1.amazonaws.com%2Fbuildthebandwagon%2Fair-live-radio-streaming-banner-mic.jpg&w=1080&q=75");
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+.specs-thirdl{
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  
+  align-items: center;
+  justify-content: center;
+  gap: 1%;
+}
+.img-div3{
+ height: 7vw;
+ width: 12vw;
+ 
+ border-radius: 1vmax;
+background-image: url("https://buildthebandwagon.com/_next/image?url=https%3A%2F%2Fbuildthebandwagon.s3.eu-west-1.amazonaws.com%2Fbuildthebandwagon%2F20220928_121136.jpg&w=1080&q=75");
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
 
 @media screen and (max-width: 900px) {
   .homepage{
   padding: 3%;
+  font-size: 3rem;
 }
   .navbar{
    grid-template-columns: 70%  30%;
@@ -204,41 +298,184 @@ html,body{
   object-position: center;
 }
 .video-show{
-  width: 100%;
-  height: 25vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: black;
-
-}
-}
-
-
-.video-show{
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: black;
-
- 
-}
-.center-txt{
-  display: flex;
-  gap: 10px;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: center;
-
   
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+
 }
+
 
 .specialities{
   width: 100%;
   height: 100vh;
-  background-color: black;
+  font-size: 12vw;
+  font-weight: 800;
+
  
- 
+}
+
+.cards-container{
+  
+  
+  flex-direction: column;
+  top: 100%;
+}
+.card{
+  width: 25vmax;
+  height: 35vmax;
+  background-color: red;
+  margin-top: 10vh;
+  
+}
+}
+
+.word1{
+  position: relative;
+  --after-width: 0%;
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.227);
+}
+.word1::after{
+  content: "EXPERIENCE";
+  position: absolute;
+    left: 0;
+    z-index: 11;
+    opacity: 1;
+     color: white;
+     flex-wrap: nowrap;
+      width: var(--after-width);
+     overflow: hidden;
+}
+.word2{
+  position: relative;
+   --secondword:0%;
+   color: rgba(255, 255, 255, 0.227);
+   display: inline-block;
+  
+}
+.word2::after{
+  content: "ARCHITECTS";
+  position: absolute;
+    left: 0;
+    z-index: 11;
+    opacity: 1;
+     color: white;
+     flex-wrap: nowrap;
+      width: var(--secondword);
+     overflow: hidden;
+}
+.word3{
+  position: relative;
+   --thirdword:0%;
+   color: rgba(255, 255, 255, 0.227);
+   display: inline-block;
+  
+}
+.word3::after{
+  content: "TACTIAL";
+  position: absolute;
+    left: 0;
+    z-index: 11;
+    opacity: 1;
+     color: white;
+     flex-wrap: nowrap;
+      width: var(--thirdword);
+     overflow: hidden;
+}
+.word4{
+  position: relative;
+   --fourthword:0%;
+   color: rgba(255, 255, 255, 0.227);
+   display: inline-block;
+  
+}
+.word4::after{
+  content: "STORYTELLERS";
+  position: absolute;
+    left: 0;
+    z-index: 11;
+    opacity: 1;
+     color: white;
+     flex-wrap: nowrap;
+      width: var(--fourthword);
+     overflow: hidden;
+}
+.word5{
+  position: relative;
+   --fifthword:0%;
+   color: rgba(255, 255, 255, 0.227);
+   display: inline-block;
+  
+}
+.word5::after{
+  content: "AND CHANGE";
+  position: absolute;
+    left: 0;
+    z-index: 11;
+    opacity: 1;
+     color: white;
+     flex-wrap: nowrap;
+     white-space:nowrap;
+      width: var(--fifthword);
+     overflow: hidden;
+}
+.word6{
+  position: relative;
+   --sixthword:0%;
+   color: rgba(255, 255, 255, 0.227);
+   display: inline-block;
+  
+}
+.word6::after{
+  content: "MAKERS";
+  position: absolute;
+    left: 0;
+    z-index: 11;
+    opacity: 1;
+     color: white;
+     flex-wrap: nowrap;
+      width: var(--sixthword);
+     overflow: hidden;
+}
+
+.team{
+  width: 100%;
+  height: 100vh;
+  font-size: 19vw;
+  font-weight: 800;
+  line-height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "gulugulu";
+  position: relative;
+}
+.cards-container{
+  width: 100%;
+  height: fit-content;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  top: 100%;
+  align-items: center;
+}
+.card{
+  width: 25vmax;
+  height: 35vmax;
+  background-color: rgb(210, 141, 141);
+  border-radius: 1vmax;
+  
+}
+.events{
+width: 100%;
+height: 100vh;
+}
+.card1{
+  transform: rotate(-5deg);
+}
+.card3{
+  transform: rotate(5deg);
 }
