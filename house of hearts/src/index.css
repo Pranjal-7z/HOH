@@ -424,7 +424,7 @@ overflow: hidden;
 .event-card{
    width: 30vw;
   height: 35vw;
-  background-color: pink;
+ 
   border-radius: 1vmax;
   flex-shrink: 0;
   margin-left: 5vmax;
@@ -535,4 +535,70 @@ overflow: hidden;
   height: 45vmax;
  
 }
+}
+
+.information{
+  width: 100%;
+  height: 400vh;
+  position: relative;
+}
+.sidelook{
+  width: 30%;
+  height: 100vh;
+
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.first-info{
+  width: 70%;
+  height: 25%;
+ 
+}
+.second-info{
+  width: 70%;
+  height: 25%;
+ 
+}
+.third-info{
+  width: 70%;
+  height: 25%;
+  
+}
+.fourth-info{
+  width: 70%;
+  height: 25%;
+  
+}
+.contact{
+  width: 100%;
+  height: 100vh;
+  
+}
+.releted-pic{
+  width: 35vh;
+  height: 35vh;
+ background-color: yellow;
+  border-radius: 20px;
+}
+
+.information h3{
+  font-size: 6vw;
+  font-family: "gulugulu";
+  margin-bottom: 2vh;
+}
+.information p{
+  font-size: 3vw;
+  font-family: "gulugulu";
+}
+.info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-left: 2%;
 }
