@@ -241,95 +241,7 @@ background-size: cover;
 background-repeat: no-repeat;
 }
 
-@media screen and (max-width: 900px) {
-  .homepage{
-  padding: 3%;
-  font-size: 3rem;
-}
-  .navbar{
-   grid-template-columns: 70%  30%;
-   height: 10vh;
-   
-}
-.logo{
-  justify-content: left;
-   font-size: 1.2rem;
-   line-height: 100%;
-}
-.nav-space{
-  display: none;
-}
-.nav-menu{
-  
-  font-size: 3rem;
-  
-}
 
-.home-text{
- 
-
- 
-  font-size: 15vw;
-  font-weight: 800;
-  line-height: 100%;
-  position: relative;
-  
-}
- .showcase{
-  height: 11vw;
- width: 15vw;
-
- overflow: hidden;
-  transform-origin: 59% center;
- border-radius: 1vmax;
- margin-top: 0;
- padding: 0;
- display: flex;
- align-items: center;
-  justify-content: center;
-  
-  
-}
-.showcase video{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  margin: 0;
-  object-position: center;
-}
-.video-show{
-  
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: black;
-
-}
-
-
-.specialities{
-  width: 100%;
-  height: 100vh;
-  font-size: 12vw;
-  font-weight: 800;
-
- 
-}
-
-.cards-container{
-  
-  
-  flex-direction: column;
-  top: 100%;
-}
-.card{
-  width: 25vmax;
-  height: 35vmax;
-  background-color: red;
-  margin-top: 10vh;
-  
-}
-}
 
 .word1{
   position: relative;
@@ -459,23 +371,168 @@ background-repeat: no-repeat;
   position: absolute;
   display: flex;
   justify-content: space-around;
-  top: 100%;
+  bottom: -150%;
   align-items: center;
 }
 .card{
   width: 25vmax;
   height: 35vmax;
-  background-color: rgb(210, 141, 141);
+display: flex;
+flex-direction: column;
+justify-content: end;
   border-radius: 1vmax;
+  font-size: 13vw;
   
+}
+
+.card1{
+  transform: rotate(-5deg);
+  background-image: url(https://ntvb.tmsimg.com/assets/assets/509114_v9_bb.jpg);
+   background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.card2{
+  background-image: url(https://www.hindustantimes.com/ht-img/img/2024/12/22/1600x900/Varun_Dhawan_1734844252803_1734844262744.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.card3{
+  transform: rotate(5deg);
+  background-image: url(https://i.pinimg.com/236x/b6/84/ae/b684aef323c9e64059a57037d57e5528.jpg);
+    background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .events{
 width: 100%;
 height: 100vh;
+
+display: flex;
+align-items: center;
+overflow: hidden;
 }
-.card1{
-  transform: rotate(-5deg);
+.horizontal-div{
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  
 }
-.card3{
-  transform: rotate(5deg);
+
+.event-card{
+   width: 30vw;
+  height: 35vw;
+  background-color: pink;
+  border-radius: 1vmax;
+  flex-shrink: 0;
+  margin-left: 5vmax;
+  margin-right: 5vmax;
+  object-fit: cover;
+  object-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  
+}
+.event-card video{
+  width: 100%;
+}
+   
+
+@media screen and (max-width: 900px) {
+  .homepage{
+  padding: 3%;
+  font-size: 3rem;
+}
+  .navbar{
+   grid-template-columns: 70%  30%;
+   height: 10vh;
+   
+}
+.logo{
+  justify-content: left;
+   font-size: 1.2rem;
+   line-height: 100%;
+}
+.nav-space{
+  display: none;
+}
+.nav-menu{
+  
+  font-size: 3rem;
+  
+}
+
+.home-text{
+ 
+
+ 
+  font-size: 15vw;
+  font-weight: 800;
+  line-height: 100%;
+  position: relative;
+  
+}
+ .showcase{
+  height: 11vw;
+ width: 15vw;
+
+ overflow: hidden;
+  transform-origin: 59% center;
+ border-radius: 1vmax;
+ margin-top: 0;
+ padding: 0;
+ display: flex;
+ align-items: center;
+  justify-content: center;
+  
+  
+}
+.showcase video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+  object-position: center;
+}
+.video-show{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+
+}
+
+
+.specialities{
+  width: 100%;
+  height: 100vh;
+  font-size: 12vw;
+  font-weight: 800;
+
+ 
+}
+
+.cards-container{
+  
+  
+  flex-direction: column;
+  
+}
+.card{
+  width: 25vmax;
+  height: 35vmax;
+  background-color: red;
+  margin-top: 10vh;
+  
+}
+.event-card{
+   width: 35vmax;
+  height: 45vmax;
+ 
+}
 }
