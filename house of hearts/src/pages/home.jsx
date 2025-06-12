@@ -198,7 +198,6 @@ const home = () => {
       
      
       </div>
-      
       <div className="events">
       
         <div className="horizontal-div">
