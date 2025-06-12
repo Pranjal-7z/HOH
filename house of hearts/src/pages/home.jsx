@@ -105,6 +105,8 @@ const home = () => {
    
     })
 
+    //chauthi timeline
+
     const tl4=gsap.timeline({
       scrollTrigger:{
         trigger:".events",
@@ -124,11 +126,13 @@ const home = () => {
       duration:2
     })
    
+    //pachvi timeline
+
     const tl5=gsap.timeline({
       scrollTrigger:{
         trigger:".sidelook",
         start:"top top",
-        end:"top bottom",
+        end:"bottom 40%",
         endTrigger:".contact",
         markers:true,
         pin:true,
@@ -136,10 +140,51 @@ const home = () => {
       }
     })
     
+    //sahavi timeline
+    const tl6=gsap.timeline({
+      scrollTrigger:{
+        trigger:".first-info",
+        start:"top top",
+        end:"bottom 60%",
+        pin:true,
+       
+      }
+    })
+   
+     const tl7=gsap.timeline({
+      scrollTrigger:{
+        trigger:".second-info",
+        start:"top top",
+        end:"bottom 60%",
+        pin:true,
+        scrub:true
+       
+      }
+    })
+     
+     const tl8=gsap.timeline({
+      scrollTrigger:{
+        trigger:".third-info",
+        start:"top top",
+        end:"bottom 60%",
+        pin:true,
+      }
+    })
+     const tl9=gsap.timeline({
+      scrollTrigger:{
+        trigger:".fourth-info",
+        start:"top top",
+        end:"bottom 60%",
+        pin:true,
+        
+      }
+    })
+    
  
   })
  
 
+ 
 
   const playVideo = () => {
     
@@ -227,6 +272,8 @@ const home = () => {
            <div className="fourth-info info"><h3>Why It Matters</h3> <p>We’re building something real—where <br />every voice and vision counts.</p></div>
        </div>
        <div className="contact"></div>
+       
+
     </div>
   );
 };
