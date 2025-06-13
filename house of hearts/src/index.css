@@ -519,7 +519,167 @@ margin-right: 2%;
 
 
 
-@media screen and (max-width: 600px) {
+
+.about{
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+ font-family: "Electrolize", sans-serif;
+ font-size: 6.5vh;
+ position: relative;
+ 
+}
+.about-text{
+ 
+   text-align: center;
+ display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  
+  font-size: 4.5vw;
+  font-weight: 800;
+  line-height: 110%;
+}
+.about-line1{
+  text-wrap: none;
+}
+.about-line2{
+  display: flex;
+  flex-wrap: nowrap;
+align-items: center;
+gap: 5px ;
+}
+.span1{
+   font-family: "Krub", sans-serif;
+   color: skyblue;
+  
+}
+.span2{
+  font-family: "Edu VIC WA NT Hand", cursive;
+   
+   font-weight: 50;
+}
+.knowmore{
+  margin-top: 5vh;
+  border: none;
+  color: white;
+  font-weight: 600;
+  background-color: rgb(254, 30, 127);
+  padding: 1.5vw 2.5vw;
+  font-size: 1.3vw;
+  font-family:  "Electrolize", sans-serif;
+}
+
+.journey{
+  width: 100%;
+  height: 20vh;
+ 
+  position: absolute;
+  bottom: 0;
+  font-size: 2vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.journey-cont{
+  display: flex;
+  gap: 5vw;
+}
+
+.footer{
+  width: 100%;
+  height: 70vh;
+  word-spacing: 2px;
+  display: grid;
+  grid-template-columns: 50% 20% 30%;
+ margin: 0;
+ padding: 0;
+ font-family: "Edu VIC WA NT Hand", cursive;
+ overflow-x: hidden;
+border-top:solid 2px rgba(255, 255, 255, 0.163);
+border-radius: 30px;
+}
+.footer-logo{
+ width: 100%;
+ height: 100%;
+gap: 1.5vw;
+ padding: 5%;
+ display: flex;
+ flex-direction: column;
+ align-items: left;
+ justify-content: center;
+}
+.footer-logo img{
+  width: 7vh;
+  width: 7vh;
+  border-radius: 50%;
+}
+.footer-logo span {
+  font-size: 2.2vh;
+}
+.media {
+  display: flex;
+  align-items: flex-start;
+  gap: 3%;
+}
+.social {
+  width: 4vh;
+  height: 4vh;
+  background-color: rgb(218, 218, 218);
+  border-radius: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+.footer-link{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 2vw;
+  justify-content: center;
+ width: 100%;
+ height: 100%;
+
+}
+.footer-link ul{
+  padding-left: 1vw;
+  cursor: pointer;
+}
+.footer-number{
+ width: 100%;
+ height: 100%;
+
+ display: flex;
+ flex-direction: column;
+ align-items: start;
+ justify-content: center;
+ padding: 2vw;
+}
+.footer-number ul{
+  padding-left: 1vw;
+  cursor: pointer;
+}
+
+.full-logo{
+  gap: 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: 2vh;
+ 
+
+}
+
+
+@media screen and (max-width: 800px) {
   .homepage{
   padding: 3%;
   font-size: 3rem;
@@ -640,159 +800,28 @@ display: none;
   font-size: 2vh;
   font-family: "gulugulu";
 }
-}
-
-.about{
-  flex-wrap: nowrap;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
- font-family: "Electrolize", sans-serif;
- font-size: 6.5vh;
- position: relative;
- 
-}
 .about-text{
- 
-   text-align: center;
- display: flex;
-  flex-direction: column; 
-  align-items: center;
-  justify-content: center;
-  
-  font-size: 4.5vw;
-  font-weight: 800;
-  line-height: 110%;
-}
-.about-line1{
-  text-wrap: none;
-}
-.about-line2{
-  display: flex;
-  flex-wrap: nowrap;
-align-items: center;
-gap: 5px ;
-}
-.span1{
-   font-family: "Krub", sans-serif;
-   color: skyblue;
-  
-}
-.span2{
-  font-family: "Edu VIC WA NT Hand", cursive;
-   
-   font-weight: 50;
+  font-size: 7vw;
 }
 .knowmore{
-  margin-top: 5vh;
-  border: none;
-  color: white;
-  font-weight: 600;
-  background-color: rgb(254, 30, 127);
-  padding: 1.5vw 2.5vw;
-  font-size: 1.3vw;
+  
+  font-size: 2.5vh;
   font-family:  "Electrolize", sans-serif;
 }
 
-.journey{
-  width: 100%;
-  height: 20vh;
- 
-  position: absolute;
-  bottom: 0;
-  font-size: 2vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.journey-cont{
-  display: flex;
-  gap: 5vw;
-}
 
 .footer{
-  width: 100%;
-  height: 70vh;
-  word-spacing: 2px;
-  display: grid;
-  grid-template-columns: 50% 20% 30%;
- margin: 0;
- padding: 0;
- font-family: "Edu VIC WA NT Hand", cursive;
+  
+  grid-template-columns: 100%;padding: 5vw;
  
 }
-.footer-logo{
- width: 100%;
- height: 100%;
-gap: 1.5vw;
- padding: 5%;
- display: flex;
- flex-direction: column;
- align-items: left;
- justify-content: center;
-}
-.footer-logo img{
-  width: 5vw;
-  width: 5vw;
-  border-radius: 50%;
-}
-.footer-logo span{
-  font-size: 1.2vw;
-}
-.media {
-  display: flex;
-  align-items: flex-start;
-  gap: 3%;
-}
-.social {
-  width: 4vh;
-  height: 4vh;
-  background-color: rgb(218, 218, 218);
-  border-radius: 10%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgb(0, 0, 0);
-  cursor: pointer;
-}
-.footer-link{
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  padding: 2vw;
-  justify-content: center;
- width: 100%;
- height: 100%;
-
-}
-.footer-link ul{
-  padding-left: 1vw;
-  cursor: pointer;
-}
-.footer-number{
- width: 100%;
- height: 100%;
-
- display: flex;
- flex-direction: column;
- align-items: start;
- justify-content: center;
- padding: 2vw;
-}
-.footer-number ul{
-  padding-left: 1vw;
-  cursor: pointer;
-}
-
 .full-logo{
   gap: 1vw;
   display: flex;
   align-items: center;
   justify-content: left;
+  font-size: 3vw;
  
 
+}
 }
