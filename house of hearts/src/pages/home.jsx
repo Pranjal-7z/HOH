@@ -343,12 +343,19 @@ const home = () => {
       </div>
       <div className="free"></div>
       <div className="about">
-        <h3>
+        <div className="about-text"><h3>
           United by <span className="span1">Creators </span><br /> to shape <span className="span2">Culture</span>,  community,<br /> and real
            <span className="span3"> expression</span>
-        </h3>
+        </h3></div>
+        
         <button className="knowmore">know more</button>
-        <div className="journey"></div>
+        <div className="journey">
+          <div className="journey-cont">
+          <span>500k+ <br />youth reached</span>
+          <span>100+ <br />active members</span>
+          <span>4+ <br />major events,</span>
+          </div>
+          </div>
       </div>
     </div>
   );
