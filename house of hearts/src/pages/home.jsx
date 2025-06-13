@@ -361,8 +361,9 @@ const home = () => {
           </div>
           </div>
       </div>
+       <Footer/>
     </div>
-    <Footer/>
+   
     </>
   );
 };
