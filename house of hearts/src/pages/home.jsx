@@ -7,6 +7,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect } from "react";
 import { useState } from "react";
 import CustomEase from "gsap/CustomEase";
+import Footer from "../components/footer";
 gsap.registerPlugin(ScrollTrigger);
 const home = () => {
   const videoscrollref = useRef(null);
@@ -204,6 +205,7 @@ const home = () => {
   // });
 
   return (
+    <>
     <div className="all">
       <Navbar />
       <div className="homepage">
@@ -245,7 +247,7 @@ const home = () => {
       </div>
       <div className="team">
         <p>
-          {" "}
+          
           ALWAYS <br />
           THE TEAM
         </p>
@@ -314,7 +316,7 @@ const home = () => {
           <div className="releted-pic"></div>
         </div>
         <div className="first-info info">
-          <h3>Who We Are</h3>{" "}
+          <h3>Who We Are</h3>
           <p>
             Born in Nagpur. Built by creators. <br /> Driven to express freely.
           </p>
@@ -334,7 +336,7 @@ const home = () => {
           </p>
         </div>
         <div className="fourth-info info">
-          <h3>Why It Matters</h3>{" "}
+          <h3>Why It Matters</h3>
           <p>
             We’re building something real—where <br />
             every voice and vision counts.
@@ -343,12 +345,14 @@ const home = () => {
       </div>
       <div className="free"></div>
       <div className="about">
-        <div className="about-text"><h3>
-          United by <span className="span1">Creators </span><br /> to shape <span className="span2">Culture</span>,  community,<br /> and real
-           <span className="span3"> expression</span>
-        </h3></div>
+        <div className="about-text">
+         
+         <div className="about-line1">United by <span className="span1">Creators </span></div> 
+         <div className="about-line2">to shape <span className="span2">Culture</span>, community,</div>
+          <div className="about-line3">and real <span className="span3"> expression</span></div> 
+        </div>
         
-        <button className="knowmore">know more</button>
+        <button className="knowmore">know more <i class="ri-arrow-right-double-line"></i></button>
         <div className="journey">
           <div className="journey-cont">
           <span>500k+ <br />youth reached</span>
@@ -358,6 +362,8 @@ const home = () => {
           </div>
       </div>
     </div>
+    <Footer/>
+    </>
   );
 };
 
