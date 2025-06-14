@@ -114,7 +114,6 @@ const home = () => {
         trigger: ".events",
         start: "top 0%",
         end: "bottom 0%",
-        markers: true,
         pin: true,
         scrub: true,
       },
@@ -135,7 +134,7 @@ const home = () => {
         start: "top top",
         end: "top 0%",
         endTrigger: ".free",
-        markers: true,
+       
         pin: true,
         scrub: true,
       },
@@ -206,6 +205,7 @@ const home = () => {
 
   return (
     <>
+    
     <div className="all">
       <Navbar />
       <div className="homepage">
@@ -231,18 +231,18 @@ const home = () => {
       <div ref={videoscrollref} className="video-show"></div>
       <div ref={videostopref} className="specialities">
         <div className="specs-firstl">
-          <div className="word1">EXPERIENCE</div>{" "}
-          <div className="img-div1"></div>{" "}
+          <div className="word1">EXPERIENCE</div>
+          <div className="img-div1"></div>
           <div className="word2">ARCHITECTS</div>
         </div>
         <div className="specs-secondl">
-          <div className="word3">TACTIAL</div> <div className="img-div2"></div>{" "}
+          <div className="word3">TACTIAL</div> <div className="img-div2"></div>
           <div className="word4">STORYTELLERS</div>
         </div>
         <div className="specs-thirdl">
           <div className="word5">AND CHANGE</div>
           <div className="img-div3"></div>
-          <div className="word6">MAKERS</div>{" "}
+          <div className="word6">MAKERS</div>
         </div>
       </div>
       <div className="team">
