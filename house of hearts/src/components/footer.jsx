@@ -5,7 +5,7 @@ const footer = () => {
     <div className='footer'>
         <div className="footer-logo">
           <div className="full-logo">
-            <img src="src\assets\images\hhh.jpg" alt="" />
+            <img src="images\hhh.jpg" alt="" />
             <h1>House Of Hearts</h1>
           </div>
           <div><span>connect with our socials</span></div>
