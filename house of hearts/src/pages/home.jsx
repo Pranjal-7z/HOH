@@ -354,7 +354,7 @@ const home = () => {
           <div className="journey-cont">
           <span>500k+ <br />youth reached</span>
           <span>100+ <br />active members</span>
-          <span>4+ <br />major events,</span>
+          <span>4+ <br />major events</span>
           </div>
           </div>
       </div>
