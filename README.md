@@ -48,6 +48,4 @@ The goal was to create a website that not only informs but also immerses visitor
 - Ideas turn into art
 - Offline and online moments blend meaningfully
 
----
-
 
